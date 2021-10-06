@@ -4,7 +4,7 @@
 conda activate WindowedAdmix
 
 #Get variable names from sbatch submission
-Chrom=${1}
+CHROM=${1}
 VCF=${2}
 SampleInfo1=${3}
 SampleInfo2=${4}
