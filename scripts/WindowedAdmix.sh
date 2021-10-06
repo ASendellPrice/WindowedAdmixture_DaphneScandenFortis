@@ -24,8 +24,8 @@ cat ../${SampleInfo1} | cut -f 1 > group1.list
 cat ../${SampleInfo2} | cut -f 1 > group2.list
 
 #Create focal chromosome VCF for each group and compress
-vcftools --gzvcf $VCF --chr $CHROM --keep group1.list --out ${CHROM}.group1 --recode
-vcftools --gzvcf $VCF --chr $CHROM --keep group2.list --out ${CHROM}.group2 --recode
+vcftools --gzvcf ../$VCF --chr $CHROM --keep group1.list --out ${CHROM}.group1 --recode
+vcftools --gzvcf ../$VCF --chr $CHROM --keep group2.list --out ${CHROM}.group2 --recode
 bgzip ${CHROM}.group1.recode.vcf
 bgzip ${CHROM}.group2.recode.vcf
 
