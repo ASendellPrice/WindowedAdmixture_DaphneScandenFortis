@@ -1,9 +1,7 @@
 #!/bin/bash
 
 #Load conda environment
-#conda create -n WindowedAdmix
 conda activate WindowedAdmix
-#conda install -c bioconda admixture bcftools vcftools plink
 
 #Get variable names from sbatch submission
 Chrom=${1}
