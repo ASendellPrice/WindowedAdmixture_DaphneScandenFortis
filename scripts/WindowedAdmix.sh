@@ -1,4 +1,4 @@
-
+#!/bin/bash
 
 #Load conda environment
 #conda create -n WindowedAdmix
