@@ -29,9 +29,10 @@ To perform windowed admixture analysis submit script along with the following pa
 3. training sample list with equal numbers of species A and species B
 4. target sample info specifying: sampleID  Island  Species
 5. window size in bp
-6. step sixe in bp
+6. step size in bp
 7. suffix for output directory name
 
+An example submission looks like this:
 ```
 source scripts/WindowedAdmix.sh \
 chr1A Input.vcf \
