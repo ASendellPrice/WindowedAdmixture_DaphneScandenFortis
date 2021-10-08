@@ -7,8 +7,8 @@ args <- commandArgs()
 chrom_length <- as.numeric(readLines("length.txt"))
 
 # set window size and window jump
-window_size <- args[1]
-window_jump <- args[2]
+window_size <- as.numeric(args[1])
+window_jump <- as.numeric(args[2])
 
 # use seq to find the start points of each window
 window_start <- seq(from = 1, to = chrom_length, by = window_jump)
