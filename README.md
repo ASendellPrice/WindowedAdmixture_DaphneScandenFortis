@@ -45,3 +45,10 @@ Note: currently only windows of length "window size" will be outputted, meaning 
 #window_start <- window_start[which(window_stop < chrom_length)]
 #window_stop <- window_stop[which(window_stop < chrom_length)]
 ```
+
+## Plotting results
+There are two plotting scripts that be used to visualise results:
+1. plot_windowedAdmix.R - best for large windows
+2. plot_windowedAdmix_smoothed.R - best for small windows
+
+Examples outputs are shown below:
