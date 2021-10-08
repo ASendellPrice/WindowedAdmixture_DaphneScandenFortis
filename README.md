@@ -1,4 +1,4 @@
-# WindowedAdmixture_DaphneScandenFortis
+# Performing admixture projection analyses in coordinate based windows
 
 ## Introduction
 The following pipeline can be used to preform Admixture projection analyses in sliding windows. These were developed for the Darwin's finches project to assess population structuring within a dataset with un-even sampling between focal species. The pipeline is developed for use with two species/population groupings: here we use Daphne scandens and Daphne fortis.
@@ -39,4 +39,8 @@ chr1A Input.vcf \
 31S_31F_to1983.txt 1973-1983_scandens_fortis.txt \
 500000 500000 \
 Daphne_Sc_Fo_to1983
+```
+Note: currently only windows of length "window size" will be outputted, meaning that trailing SNPs at the end of the chromosome will not be included in the analysis. To include these comment out line 26 of "getWindowRanges.R" script:
+```
+#window_stop <- window_stop[which(window_stop < chrom_length)]
 ```
