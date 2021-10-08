@@ -2,6 +2,7 @@
 
 #Keep command line arguments
 args <- commandArgs()
+print(commandArgs())
 
 # set chromosome size
 chrom_length <- as.numeric(readLines("length.txt"))
