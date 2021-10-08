@@ -1,5 +1,13 @@
 # WindowedAdmixture_DaphneScandenFortis
-Pipeline for running window based admixture analyses for finches
+
+The following pipeline can be used to preform Admixture analyses in sliding windows. These scripts have been developed for Darwin's finches
+
+Simple mode:
+
+Projection mode:
+
+Projection 2 timeframe:
+
 
 Conda environment:
 ```
