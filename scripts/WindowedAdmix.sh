@@ -19,7 +19,7 @@ cd ${CHROM}_${OutName}
 #Create sample lists from info file
 cat ../${SampleInfo1} | cut -f 1 > trainAdmix.list
 cat ../${SampleInfo2} | cut -f 1 > projAdmix.list
-cp ../${SampleInfo2} > sample_info.tmp
+cp ../${SampleInfo2} sample_info.tmp
 
 #Create focal chromosome VCF for each group and compress
 vcftools --gzvcf ../$VCF --chr $CHROM --keep trainAdmix.list --out ${CHROM}.trainAdmix --recode

@@ -9,7 +9,7 @@ Projection mode:
 Projection 2 timeframe:
 
 
-Conda environment:
+Conda environment: ADD R
 ```
 conda create -n WindowedAdmix
 conda activate WindowedAdmix
@@ -17,9 +17,11 @@ conda install -c bioconda admixture bcftools vcftools plink
 ```
 
 
+
 ```
 source scripts/WindowedAdmix.sh \
 chr1A Input.vcf \
 1973-1983_scandens_fortis.txt 1984-2012_scandens_fortis.txt \
-500000 500000
+500000 500000 \
+Daphne_Sc_Fo_to1983
 ```
