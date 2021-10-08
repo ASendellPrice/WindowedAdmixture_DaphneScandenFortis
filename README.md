@@ -8,7 +8,7 @@ The main script "WindowedAdmix.sh" consists of two main components:
 1. An initial admixture run using an equal number of samples per species.
 2. A second admixture run on the full target samples using the allele frequencies learned during step 1.
 
-## Environement setup
+## Set up environment
 To run the pipeline, the following conda environment needs to be set up:
 ```
 conda create -n WindowedAdmix
@@ -32,7 +32,7 @@ To perform windowed admixture analysis submit script along with the following pa
 6. step size in bp
 7. suffix for output directory name
 
-An example submission looks like this:
+An example submission, where we use an equal number of pre1984 scandens and fortis to train admixture, looks like this:
 ```
 source scripts/WindowedAdmix.sh \
 chr1A Input.vcf \
