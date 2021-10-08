@@ -40,7 +40,8 @@ chr1A Input.vcf \
 500000 500000 \
 Daphne_Sc_Fo_to1983
 ```
-Note: currently only windows of length "window size" will be outputted, meaning that trailing SNPs at the end of the chromosome will not be included in the analysis. To include these comment out line 26 of "getWindowRanges.R" script:
+Note: currently only windows of length "window size" will be outputted, meaning that trailing SNPs at the end of the focal chromosome will not be included in the analysis. To include these comment out lines 25-26 of "getWindowRanges.R" script:
 ```
+#window_start <- window_start[which(window_stop < chrom_length)]
 #window_stop <- window_stop[which(window_stop < chrom_length)]
 ```
