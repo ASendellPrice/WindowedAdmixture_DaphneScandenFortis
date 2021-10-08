@@ -84,6 +84,6 @@ do
 done
 
 #For each species (fortis/scandens) calculate the average admixture proportions across samples for each window
-mkdir ../summarise_plot
-cd admixture_output/projAdmix
-Rscript ../../../scripts/summarise_plot.R
+#mkdir ../summarise_plot
+#cd admixture_output/projAdmix
+#Rscript ../../../scripts/summarise_plot.R
