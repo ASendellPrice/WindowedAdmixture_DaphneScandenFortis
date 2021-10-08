@@ -1,12 +1,11 @@
 # WindowedAdmixture_DaphneScandenFortis
 
-The following pipeline can be used to preform Admixture projection analyses in sliding windows. These were developed for the Darwin's finches project to assess population structuring within a dataset with un-even sampling / frequent gene flow between focal species. The pipeline is developed for use with two species/population groupings:
+The following pipeline can be used to preform Admixture projection analyses in sliding windows. These were developed for the Darwin's finches project to assess population structuring within a dataset with un-even sampling between focal species. The pipeline is developed for use with two species/population groupings: here we use Daphne scandens and Daphne fortis.
 
 The main script "WindowedAdmix.sh" consists of two main components:
 
 1. An initial admixture run using an equal number of samples per species.
 2. A second admixture run on the full target samples using the allele frequencies learned during step 1.
-
 
 To run the pipeline, the following conda environment needs to be set up:
 ```
@@ -15,6 +14,11 @@ conda activate WindowedAdmix
 conda install -c bioconda admixture bcftools vcftools plink
 ```
 
+Note: R will also need to be installed, along with the following packages:
+-  dplyr
+- pophelper
+- ggplot2
+- ggthemes
 
 
 
@@ -32,7 +36,7 @@ To perform windowed admixture analysis submit script along with the following pa
 ```
 source scripts/WindowedAdmix.sh \
 chr1A Input.vcf \
-31S_31F_to1983.txt 1984-2012_scandens_fortis.txt \
+31S_31F_to1983.txt 1973-1983_scandens_fortis.txt \
 500000 500000 \
-Daphne_Sc_Fo_1984to2012
+Daphne_Sc_Fo_to1983
 ```
