@@ -52,3 +52,12 @@ There are two plotting scripts that be used to visualise results:
 2. plot_windowedAdmix_smoothed.R - best for small windows
 
 Examples outputs are shown below:
+```
+Rscript scripts/plot_windowedAdmix.R \
+chr1A scandens fortis
+```
+
+```
+Rscript scripts/plot_windowedAdmix.R \
+chr1A scandens fortis 200000
+```
