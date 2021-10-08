@@ -1,4 +1,5 @@
 #!/usr/bin/env Rscript
+options(scipen=999)
 
 #Keep command line arguments
 args <- commandArgs()
