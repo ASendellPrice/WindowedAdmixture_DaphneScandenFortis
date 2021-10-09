@@ -34,11 +34,11 @@ To perform windowed admixture analysis submit script along with the following pa
 
 An example submission, where we use an equal number of pre1984 scandens and fortis to train admixture, looks like this:
 ```
-source scripts/WindowedAdmix.sh \
+sbatch scripts/WindowedAdmix.sh \
 chr1A Input.vcf \
-31S_31F_to1983.txt 1973-1983_scandens_fortis.txt \
+31S_31F_to1983.txt 1984-2012_scandens_fortis.txt \
 500000 500000 \
-Daphne_Sc_Fo_to1983
+Daphne_Sc_Fo_1984to2012
 ```
 Note: currently only windows of length "window size" will be outputted, meaning that trailing SNPs at the end of the focal chromosome will not be included in the analysis. To include these comment out lines 25-26 of "getWindowRanges.R" script:
 ```

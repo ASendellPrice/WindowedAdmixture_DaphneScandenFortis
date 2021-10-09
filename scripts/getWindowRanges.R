@@ -29,4 +29,4 @@ window_stop <- window_stop[which(window_stop < chrom_length)]
 windows <- data.frame(start = window_start, stop = window_stop,
                       mid = window_start + (window_stop-window_start)/2)
 
-write.table(windows, "window.ranges.txt", sep = "\t", quote = FALSE, row.names = FALSE, col.names = FALSE)
+write.table(windows, "window.ranges.txt", sep = ":", quote = FALSE, row.names = FALSE, col.names = FALSE)
